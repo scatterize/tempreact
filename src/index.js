@@ -1,17 +1,51 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from './components/app/';
+// class WhoIAm extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       years: 26,
+//       test: '',
+//     };
+//     this.nextYear = this.nextYear.bind(this);
+//   }
+//   nextYear() {
+//     //console.log(1);
+//     // this.setState((state) => ({
+//     //   years: ++state.years,
+//     // }));
+//     this.setState(function (s, p) {
+//       return { years: ++s.years, test: p.name + p.surfname };
+//     });
+//   }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//   render() {
+//     const { name, surfname, link } = this.props;
+//     const { years, test } = this.state;
+//     return (
+//       <>
+//         <button onClick={this.nextYear}>++</button>
+//         <h1>
+//           My name {test} is {name}, surfname - {surfname}, years - {years}
+//         </h1>
+//         <a href={link}>godlike link</a>
+//       </>
+//     );
+//   }
+// }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const All = () => {
+//   return (
+//     <>
+//       <WhoIAm name="jonh" surfname="jpehon" link="godlike.com" />
+//       <WhoIAm name="bill" surfname="kill" link="like.com" />
+//       <WhoIAm name="hohn" surfname="chpohan" link="god.com" />
+//     </>
+//   );
+// };
+
+ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<All />, document.getElementById('root'));
